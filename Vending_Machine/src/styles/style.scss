@@ -126,6 +126,7 @@ header img {
     padding: 1.2rem 1.8rem 0 1.2rem;
     border-radius: 0.5rem;
     background-color: #eae8fe;
+    
 
     li {
       display: flex;
@@ -157,6 +158,105 @@ header img {
         font-weight: 500;
         font-size: 1.4rem;
         line-height: 2rem;
+      }
+    }
+  }
+}
+
+.price-change {
+  width: 30.6rem;
+  height: 3.2rem;
+  padding: 0.9rem 2.7rem;
+  background-color: #fff;
+
+
+.price-rest {
+  // width: 100%;
+  background-color: #eae8fe;
+  font: 1.4rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+}
+}
+
+.cart-divide {
+  height: 2rem;
+  // padding: 0 2.7rem;
+  background-color: #eae8fe;
+}
+
+.cart-saved {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: red;
+  // padding: 0 2.7rem;
+
+  
+
+  .cart-saved-tit {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin: 2.5rem 0 1.3rem;
+  }
+
+  .cart-status-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: royalblue;
+    width: 30.6rem;
+    height: 36.4rem;
+    
+    
+
+    .cart-status {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      overflow: scroll;
+      padding: 1.2rem 1.8rem 0 1.2rem;
+      border-radius: 0.5rem;
+      background-color: #eae8fe;
+      box-sizing: content-box;
+
+  
+      li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 4.6rem;
+        margin-bottom: 0.6rem;
+        border-radius: 0.5rem;
+        background-color: #fff;
+  
+        img {
+          margin-left: 1rem;
+          width: 1.8rem;
+        }
+  
+        strong {
+          margin-right: 1.5rem;
+          font-weight: 500;
+          font-size: 0.9rem;
+          line-height: 1.3rem;
+        }
+  
+        span {
+          margin-right: 0.8rem;
+          border: 1px solid #bdbdbd;
+          border-radius: 0.5rem;
+          padding: 0.4rem 1.1rem 0.6rem;
+          font-weight: 500;
+          font-size: 1.4rem;
+          line-height: 2rem;
+        }
       }
     }
   }
