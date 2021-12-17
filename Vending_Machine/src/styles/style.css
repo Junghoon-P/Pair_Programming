@@ -17,8 +17,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   background: #eae8fe;
   font-family: "Noto Sans KR", sans-serif;
 }
@@ -35,7 +33,7 @@ header img {
 
 .cart {
   margin: 6.7rem 2.8rem 0 0;
-  background-color: aquamarine;
+  background-color: #fff;
 }
 
 .cart:last-child {
@@ -92,7 +90,7 @@ header img {
   -ms-grid-rows: 3.3rem 3.3rem 10.6rem;
       grid-template-rows: 3.3rem 3.3rem 10.6rem;
   padding: 0 2.7rem 2.8rem;
-  background-color: blanchedalmond;
+  background-color: #fff;
   gap: 1.2rem;
 }
 
@@ -250,7 +248,24 @@ header img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: red;
+  background-color: #fff;
+}
+
+.cart-saved .total-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+}
+
+.cart-saved .total-price strong {
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  font-weight: 500;
+  margin: 0.6rem 2.7rem 0 0;
 }
 
 .cart-saved .cart-saved-tit {
@@ -269,7 +284,6 @@ header img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: royalblue;
   width: 30.6rem;
   height: 36.4rem;
 }
@@ -282,8 +296,8 @@ header img {
   padding: 1.2rem 1.8rem 0 1.2rem;
   border-radius: 0.5rem;
   background-color: #eae8fe;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .cart-saved .cart-status-wrap .cart-status li {
