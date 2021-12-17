@@ -17,7 +17,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #eae8fe;
+  background-color: #eae8fe;
   font-family: "Noto Sans KR", sans-serif;
 }
 
@@ -208,12 +208,15 @@ header img {
 
 .price-change {
   width: 30.6rem;
-  height: 3.2rem;
   padding: 0.9rem 2.7rem;
   background-color: #fff;
+  height: 3.2rem;
 }
 
 .price-change .price-rest {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100%;
   background-color: #eae8fe;
   font: 1.4rem;
   display: -webkit-box;
@@ -249,23 +252,6 @@ header img {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #fff;
-}
-
-.cart-saved .total-price {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  width: 100%;
-}
-
-.cart-saved .total-price strong {
-  font-size: 1.2rem;
-  line-height: 1.7rem;
-  font-weight: 500;
-  margin: 0.6rem 2.7rem 0 0;
 }
 
 .cart-saved .cart-saved-tit {
@@ -337,5 +323,62 @@ header img {
   font-weight: 500;
   font-size: 1.4rem;
   line-height: 2rem;
+}
+
+.cart-saved .total-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+}
+
+.cart-saved .total-price strong {
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  font-weight: 500;
+  margin: 0.6rem 2.7rem 0 0;
+}
+
+@media only screen and (max-width: 36rem) {
+  header img {
+    width: 16.6rem;
+  }
+  body {
+    background-color: #fff;
+  }
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .choices-wrap ul .item-price {
+    font-size: 1rem;
+  }
+  .choices-wrap ul button {
+    padding: 0 1.3rem;
+  }
+  .cart {
+    margin: 0;
+  }
+  .cart-divide {
+    height: 0.7rem;
+    background-color: transparent;
+  }
+  .cart-status {
+    border: 1px solid #bdbdbd;
+  }
+  .cart-status li {
+    border: 1px solid #bdbdbd;
+  }
+  .total-price {
+    margin-bottom: 4.3rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
